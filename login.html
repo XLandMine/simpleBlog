@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <script src="lib/angularjs/angular.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <div class="form-box" ng-app="login.model" ng-controller="loginCtr">
+        <div class="form-group logo-box">
+            <img width="100%" height="100%" src="./images/login_logo.png">
+        </div>
+        <form id="loginForm">
+            <div class="form-group">
+                <input type="text" class="form-control user-input" name="Uid" placeholder="请输入用户名...">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control pwd-input" name="Passwd" placeholder="请输入密码...">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control vercode-input" name="Code" placeholder="请输入验证码...">
+                <img width="100%" height="40px" class="vercode-img" src="">
+            </div>
+
+        </form>
+        <button class="btn btn-primary btn-login" ng-click="login();">立即登录</button>
+    </div>
+</body>
+</html>

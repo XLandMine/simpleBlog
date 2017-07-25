@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="indexCtrl">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="public/css/base.css"/>
+    <script src="lib/angularjs/angular.js"></script>
+    <script src="lib/angularjs/angular-ui-router.js"></script>
+    <script src="lib/ocLazyLoad/ocLazyLoad.min.js"></script>
+</head>
+<body>
+<header  class="header">
+    <div class="w">
+        <div class="site-name">地雷的博客</div>
+        <ul class="site-list">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">分类</a></li>
+            <li><a href="javascript:;">归档</a></li>
+            <li><a href="javascript:;">标签</a></li>
+            <li><a href="javascript:;">关于</a></li>
+            <li><a href="javascript:;">搜索</a></li>
+        </ul>
+    </div>
+</header >
+<ui-view ></ui-view>
+</body>
+</html>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/layer/layer.js"></script>
+<script src="app.js"></script>
+<script src="router.js"></script>

@@ -1,0 +1,48 @@
+.radio,.check {
+  cursor: pointer;
+  display: inline-block;
+  b {
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    display: inline-block;
+    background: url("../images/radio.png") no-repeat center left;
+  }
+}
+.check b {
+  background-image: url("../images/check.png");
+}
+.radio.checked,.check.checked {
+  b {
+    background-position: center right;
+  }
+}
+.inp-text {
+  width: 200px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+.btn:active,.btn:focus {
+  outline: none;
+}
+.btn-success {
+  background: url("../images/bg_success.png") repeat-x;
+  border: 1px solid #0eb62d;
+  background-size: 1px 100%;
+}
+.btn-success:hover {
+  color: #fff;
+  background: #449d44;
+  border-color: #398439;
+}
+.btn-danger {
+  background: url("../images/bg_danger.png") repeat-x;
+  border: 1px solid #ec4040;
+  background-size: 1px 100%;
+}
+.btn-danger:hover {
+  color: #fff;
+  background: #c9302c;
+  border-color: #ac2925;
+}
